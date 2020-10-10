@@ -12,7 +12,7 @@ const gameSchema = new Schema({
   cardArray: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Cards"
+      ref: "Card"
     }
   ]
 });
