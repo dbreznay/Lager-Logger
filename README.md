@@ -1,6 +1,6 @@
 
 # Lager-Logger
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Last Commit](https://img.shields.io/github/last-commit/dbreznay/Lager-Logger) ![Repo Size](https://img.shields.io/github/repo-size/dbrezney/Lager-Logger)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Last Commit](https://img.shields.io/github/last-commit/dbreznay/Lager-Logger) ![Repo Size](https://img.shields.io/github/repo-size/dbreznay/Lager-Logger)
 
 ## Description
 A MERN stack (MongoDB, Express.JS, React.JS, Node.JS) online gaming application that allows users to play the drinking game "Ring of Fire", "Circle of Death" or better known as "Kings". The user will be prompted to sign in and join a room with their friends over the web. The application features a realtime communication forum by utilizing the JaveScript library Socket.IO.
