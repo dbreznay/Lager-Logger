@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Header     from './components/header/Header'
+import './App.css';
+import Header from './components/header/Header'
 import Auth from './pages/Auth'
 import Profile from './pages/Profile';
 import styled from 'styled-components'
