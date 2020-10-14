@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom"
 import API from "../../utils/API"
+import { Container, GameButton } from 'reactstrap';
 
 
 class Profile extends Component {
@@ -45,7 +46,7 @@ class Profile extends Component {
 
     render() {
         return (
-            <StyledContainer className="profilePage">
+            <Container className="profilePage">
                 {this.state.loggedIn ? (
                     <div className="profileBox">
                         <h1 id="userTitle">Welcome {this.state.user.username}</h1>
@@ -79,7 +80,7 @@ class Profile extends Component {
                         )}
                     </div> 
                 )}
-            </StyledContainer>
+            </Container>
         )
     }
 }

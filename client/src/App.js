@@ -5,11 +5,10 @@ import Header from './components/header/Header'
 import Auth from './pages/Auth'
 import Profile from './pages/Profile';
 import styled from 'styled-components'
-const AppWrapper = styled.div`
-  margin-top: 6rem;
-`
 
 
+const AppWrapper = styled.div
+ 
 class App extends Component {
   render() {
     return (
