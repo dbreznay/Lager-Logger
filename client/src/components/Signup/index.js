@@ -59,7 +59,7 @@ class Signup extends Component {
 
     render() {
         return(
-            <StyledContainer>
+            <Container>
                 <h2 className="loginTitle title-font">Signup</h2>
                 <hr />
                 {this.props.message?(
@@ -90,7 +90,7 @@ class Signup extends Component {
                         <FormButton onClick={this.props.handleSignup} color="danger" block disabled>Signup</FormButton>
                     )}
                 </Form>
-            </StyledContainer>
+            </Container>
         );
     }
 }
