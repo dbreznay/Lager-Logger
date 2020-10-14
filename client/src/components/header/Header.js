@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { Container, Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Container, Nav, NavItem, NavLink } from 'reactstrap';
 
 export default class Header extends Component {
-
   render() {
     return (
       
-        <StyledNavbar color="dark" dark>
+        <Navbar>
         <Container>
-          <StyledRow>
-             <StyledNavbarBrand href="/">Project 3</StyledNavbarBrand>
-          </StyledRow>
+          <Row>
+             <NavbarBrand href="/">Project 3</NavbarBrand>
+          </Row>
 
             <Nav navbar>
               <NavItem>
@@ -27,7 +26,7 @@ export default class Header extends Component {
               </NavItem>
             </Nav>
           </Container>
-        </StyledNavbar>
+        </Navbar>
       
     
     );
