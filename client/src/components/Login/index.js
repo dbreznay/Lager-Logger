@@ -1,42 +1,7 @@
 import React from "react";
 import { Container, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
 import { Link } from "react-router-dom";
-import styled from 'styled-components';
 
-const StyledContainer = styled(Container)`
-    margin: 2rem auto;
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 1rem 1rem 0 1rem;
-    background-color: rgba(19, 18, 18, 0.671);
-    backdrop-filter: blur(5px);   
-    -webkit-backdrop-filter: blur(5px); 
-`
-
-const FormButton =  styled(Container)`
-    background: transparent;
-    backdrop-filter: blur(5px);   
-    -webkit-backdrop-filter: blur(5px); 
-    border: 1px solid rgb(25, 9, 45);
-    border-radius: 5px;
-    font-size: 1.5rem;
-    height: 4rem;
-    letter-spacing: 0.3rem;
-    margin-left: -1rem;
-    padding-top: 0.75rem;
-    text-align: center;
-    width: calc(100% + 2rem);
-    
-    &:hover{
-        background-color: rgba(95, 5, 250, 0.75);
-        backdrop-filter: blur(5px);   
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid white;
-        cursor: pointer;
-    }
-        
-`
 
 function Login(props) {
 
