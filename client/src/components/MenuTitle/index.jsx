@@ -18,7 +18,7 @@ const style = {
     }
 };
 
-const Title = (props) => {
+const MenuTitle = (props) => {
     return(
         <div>
             <h1 style={style.title}>
@@ -27,7 +27,8 @@ const Title = (props) => {
             <p style={style.description}>
                 Play <b>Circle of Death</b> online with your friends. 
             </p>
+
         </div>        
     );
 }
-export default Title;
+export default MenuTitle;
