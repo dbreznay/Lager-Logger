@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Game from './components/Game';
 import './App.css';
 import Header from './components/header/Header'
 import Auth from './pages/Auth'
@@ -12,6 +13,7 @@ class App extends Component {
       <Router>
         <>
             <Header/>
+            <Game/>
             <Switch>
 
               <Route exact path='/login' render={(props) => <Auth {...props} action="login" />} />
