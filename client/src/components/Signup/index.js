@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Form, FormText, FormGroup, Label, Input, Alert} from 'reactstrap';
+import { Container, Form, FormText, FormGroup, Label, Input, Alert, Button} from 'reactstrap';
 import { Link } from "react-router-dom";
 
 
@@ -85,9 +85,9 @@ class Signup extends Component {
 
                                         {/* if all fields are valid, allow the user to submit the form */}
                                         {(this.state.validUsername && this.state.validPassword && this.state.confirmPassword) ? (
-                        <FormButton onClick={this.props.handleSignup} color="success" block>Signup</FormButton>
+                        <Button onClick={this.props.handleSignup} color="success" block>Signup</Button>
                     ) : (
-                        <FormButton onClick={this.props.handleSignup} color="danger" block disabled>Signup</FormButton>
+                        <Button onClick={this.props.handleSignup} color="danger" block disabled>Signup</Button>
                     )}
                 </Form>
             </Container>

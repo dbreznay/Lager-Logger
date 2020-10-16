@@ -4,24 +4,21 @@ import './App.css';
 import Header from './components/header/Header'
 import Auth from './pages/Auth'
 import Profile from './pages/Profile';
-import styled from 'styled-components'
 
-
-const AppWrapper = styled.div
  
 class App extends Component {
   render() {
     return (
       <Router>
         <>
-          <AppWrapper>
-            <Header />
+            <Header/>
             <Switch>
+
               <Route exact path='/login' render={(props) => <Auth {...props} action="login" />} />
               <Route exact path="/signup" render={(props) => <Auth {...props} action="signup" />} />
               <Route exact path="/profile" component={Profile} />
+
             </Switch>
-          </AppWrapper>
         </>
       </Router>
     );

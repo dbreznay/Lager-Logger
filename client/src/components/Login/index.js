@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
+import { Container, Form, FormGroup, Label, Input, Alert, Button} from 'reactstrap';
 import { Link } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ function Login(props) {
 
 
     return (
-        <StyledContainer>
+        <Container>
             <div className="loginBox">
                 <h2 className="loginTitle title-font">Login</h2>
                 <hr/>
@@ -16,7 +16,7 @@ function Login(props) {
                 ) : (<></>)}
 
                 {props.loggedIn ? (
-                    <FormButton id="logOutBtn" onClick={props.handleLogout} >Logout</FormButton>
+                    <Button id="logOutBtn" onClick={props.handleLogout} >Logout</Button>
                 ) : (
                 <>
                 <Form id="login">
@@ -35,11 +35,11 @@ function Login(props) {
                         </p>
                     </FormGroup>
                 </Form>
-                <FormButton id="loginBtn" onClick={props.handleLogin} >Login</FormButton>
+                <Button id="loginBtn" onClick={props.handleLogin} >Login</Button>
                 </>
                 )}
             </div>
-        </StyledContainer>
+        </Container>
     );
 }
 
