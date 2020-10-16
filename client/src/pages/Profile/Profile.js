@@ -1,10 +1,12 @@
 import React, {Component} from "react";
+import { Container, Button } from 'reactstrap';
 import { Link } from "react-router-dom"
 import API from "../../utils/API"
-import { Container, GameButton } from 'reactstrap';
+import FormButton from '../../components/buttons/FormButton'
 
 
 class Profile extends Component {
+
     state = {
         loggedIn: false,
         user: null,
@@ -55,17 +57,19 @@ class Profile extends Component {
                         { this.state.user.gameArray.map(game => {
                             return (
                                     <a key = {game._id} href={`/play/${game._id}`}>
-                                        <GameButton>
-                                            <img src="https://i.pinimg.com/originals/79/4b/06/794b064076875b743c533b0c8b070fe3.jpg" alt="Card cap" class="sc-jTzLTM cVlYDB card-img"/>
+                                        <Button>
+                                            <img src="https://i.pinimg.com/originals/79/4b/06/794b064076875b743c533b0c8b070fe3.jpg" alt="Card image cap" class="sc-jTzLTM cVlYDB card-img"/>
                                             {game.gameName}
-                                        </GameButton>
+                                        </Button>
                                     </a>
                                 );
                                 })}
                     
                         <h2>High Scores: {this.state.user.highscores}</h2>
                         <ul>
-                            <li>Circle of Death</li>
+                            <li>Famous Artwork: 11</li>
+                            <li>Mixology: 10</li>
+                            <li>Colors and Numbers: 16</li>
                         </ul>
                     </div>
                 ) : (

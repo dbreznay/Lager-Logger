@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import { Container, Nav, NavItem, NavLink } from 'reactstrap';
+import { Container, Navbar, Row, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+
 
 export default class Header extends Component {
+
   render() {
     return (
       
-        <Navbar>
+        <Navbar color="dark" dark>
         <Container>
           <Row>
-             <NavbarBrand href="/">Project 3</NavbarBrand>
+             <NavbarBrand href="/">lagger-logger</NavbarBrand>
           </Row>
-
             <Nav navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href="/">Dashboard</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/create-game">Create Game</NavLink>
@@ -22,7 +23,7 @@ export default class Header extends Component {
                 <NavLink href="/login">LogIn/LogOut</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/profile">Profile Page</NavLink>
+                <NavLink href="/profile">Profile Settings</NavLink>
               </NavItem>
             </Nav>
           </Container>
