@@ -1,6 +1,6 @@
 import React from 'react';
-import List from './components/List';
-import Preloader from '../../../../components/Preloader';
+import List from '../List/index';
+import Preloader from '../Preloader/index';
 import './styles.css';
 
 const wrapperStyle = {
@@ -32,7 +32,7 @@ class RoomsList extends React.Component
                 <List rooms = {this.props.rooms} showRoomInfo = {this.showRoomInfo}/>;
         return (
             <div className="card content">
-                <div className = "content__title">Select a Room</div>
+                <div className = "content__title">Select a room</div>
                 <div className="rooms-list-wrapper">
                     {content}
                 </div>
