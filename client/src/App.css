@@ -1,25 +1,15 @@
-.navlink {
-
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-
-}
-
-.deck
-{
-	width:50%;
+.deck {
+	width: 50%;
 	margin: 20px auto;
-	background:dodgerblue;
-	border:solid 10px black;
+	background: dodgerblue;
+	border: solid 10px black;
 	padding: 10px;
-	border-radius:10px;
+	border-radius: 10px;
 	text-align: center;
-	color:white;
+	color: white;
 }
 
-.card
-{
+.card {
 	padding: 10px;
 	border: solid 1px #808080;
 	background-color: white;
@@ -27,43 +17,69 @@
 	border-radius: 10px;
 	font-size: 14pt;
 	text-align: center;
-	color:black;
+	color: black;
 	margin: 3px;
 }
 
-.btn
-{
-	background:white;
-	padding: 10px 20px;
-	border-radius:30px;
-	margin: 10px;
-	display:inline-block;
+.chat-section {
+	height: 120px;
+	width: 100%;
+	border: 1px solid #ccc;
+	overflow: auto;
 }
 
-.card .value{
-	font-size:15pt;
+.btn {
+	padding: 10px 20px;
+	border-radius: 30px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.card .value {
+	font-size: 15pt;
 	font-family: sans-serif;
 }
 
-.card .suit
-{
+.card .suit {
 	background-image: url('../src/images/card.png');
 	height: 100px;
 	width: 90px;
 }
 
-.card .diamonds
-{
+.card .diamonds {
 	background-position-y: 100px;
 }
 
-.card .hearts
-{
+.card .hearts {
 	background-position-x: 90px;
 }
 
-.card .clubs
-{
-	background-position-x:90px;
-	background-position-y:100px;
+.card .clubs {
+	background-position-x: 90px;
+	background-position-y: 100px;
+}
+
+.facedown-cards {
+	background-image: url('../src/images/unnamed.png');
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 112px;
+
+}
+
+.navlink {
+
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px;
+
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar-el {
+	padding: 0px 10px 0px 10px;
 }

@@ -12,17 +12,17 @@ export default class Header extends Component {
           <Row>
              <NavbarBrand href="/">lagger-logger</NavbarBrand>
           </Row>
-            <Nav navbar>
-              <NavItem>
+            <Nav navbar className="navbar">
+              <NavItem className="navbar-el">
                 <NavLink href="/">Dashboard</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="navbar-el">
                 <NavLink href="/create-game">Create Game</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="navbar-el">
                 <NavLink href="/login">LogIn/LogOut</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="navbar-el">
                 <NavLink href="/profile">Profile Settings</NavLink>
               </NavItem>
             </Nav>
