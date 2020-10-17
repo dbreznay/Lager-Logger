@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Counter from "../Counter/Counter";
 import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
 
 
@@ -34,22 +35,11 @@ class Game extends Component {
                     </Col>
                   </Row>
               </Container>
-              <hr></hr>
               <Container>
-                  <Row>
-                    <Col className='md-4'>
-                      <div className='text-center'>Drink Counter: </div>
-                    </Col>
-                    <Col className='md-4 d-flex justify-content-center'>
-                    <Button>+</Button>
-                    <Button>-</Button>
-                    </Col>
-                    <Col>
-                      <div className='text-center'>#</div>
-                    </Col>
+                  <Row className="d-flex justify-content-center">
+                    <Counter />
                   </Row>
               </Container>
-              <hr></hr>
               <Container>
                 <Row>
                   <Col className='chat-section md-12 text-center border boder-dark'>
