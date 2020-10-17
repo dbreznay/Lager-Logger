@@ -62,13 +62,13 @@ class Game extends Component {
                 </Row>
               </Container>
               <hr></hr>
-              <Container>
+              {/* <Container>
                 <Row>
                   <Col className='md-12 d-flex justify-content-center'>
                     <Button type="button" onClick={shuffle} className="btn btn-dark">DEAL THE CARDS</Button>
                   </Col>
                 </Row>
-              </Container>
+              </Container> */}
 
 
 
