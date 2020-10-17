@@ -9,14 +9,17 @@ class Game extends Component {
           <Container>
 
 
-              <h1 className='text-center'>Welcome to the Lager-Logger.</h1>
-              <h3 className='text-center'>Click to deal the cards.</h3>
+              <h1 className='text-center'>Welcome to the Lager-Logger</h1>
+              <h3 className='text-center'>Click to deal the cards</h3>
               <Container className='border border-dark p-3 '>
                 <Row>
                   <Col>
                     <Container>
                       <Row>
-                        <Col className='md-6 text-center border border-dark p-3'>Card face down</Col>
+                        <Col className='md-6 text-center border border-dark p-3'>
+                        <a type="button" onClick={shuffle} className="facedown-cards">
+                        </a>
+                        </Col>
                         <Col className='md-6 text-center border border-dark p-3' id='deck'>Card face up</Col>
                       </Row>
                     </Container>
@@ -27,7 +30,7 @@ class Game extends Component {
               <Container>
                   <Row>
                     <Col className='md-6 text-center p-3 border boder-dark'>
-                      <div id='rules'>Card Rulles will go here</div>
+                      <div id='rules'>Card Rules will go here</div>
                     </Col>
                   </Row>
               </Container>

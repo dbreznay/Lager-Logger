@@ -1,10 +1,4 @@
-.navlink {
 
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-
-}
 
 .deck
 {
@@ -33,7 +27,6 @@
 
 .btn
 {
-	background:white;
 	padding: 10px 20px;
 	border-radius:30px;
 	margin: 10px;
@@ -66,4 +59,29 @@
 {
 	background-position-x:90px;
 	background-position-y:100px;
+}
+
+.facedown-cards{
+	background-image: url('../src/images/unnamed.png'); 
+	background-repeat: no-repeat;
+	height: 152px;
+	width: 112px;
+
+}
+
+.navlink {
+
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar-el {
+	padding: 0px 10px 0px 10px;
 }
