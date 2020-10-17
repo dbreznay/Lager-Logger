@@ -1,5 +1,5 @@
 const express = require("express");
-
+const socket = require ('socket.io');
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const routes = require("./routes/index")
@@ -7,7 +7,18 @@ const app = express();
 const session = require("express-session");
 const passport = require("passport");
 const flash = require('connect-flash');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
+
+// messages 
+io = socket(server);
+
+io.on('connection', (socket) => {
+  console.log(socket.id);
+
+  socket.on('SEND_MESSAGE', function(data) {
+    io.emit('RECEIVE_MESSAGE', data);
+  })
+});
 
 // Require all models
 const db = require("./models");

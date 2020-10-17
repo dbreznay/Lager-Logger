@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from "../Counter/Counter";
+import Chat from '../Chat/Chat';
 import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
 
 
@@ -41,7 +42,8 @@ class Game extends Component {
                   </Row>
               </Container>
               <Container>
-                <Row>
+                <Chat />
+                {/* <Row>
                   <Col className='chat-section md-12 text-center border boder-dark'>
                 <div>Chat Will Go Right Here</div>
                 <div>Chat Will Go Right Here</div>
@@ -49,7 +51,7 @@ class Game extends Component {
                 <div>Chat Will Go Right Here</div>
                 <div>Chat Will Go Right Here</div>
                   </Col>
-                </Row>
+                </Row> */}
               </Container>
               <hr></hr>
               {/* <Container>
