@@ -52,7 +52,7 @@ class Game extends Component {
               <hr></hr>
               <Container>
                 <Row>
-                  <Col className='md-12 text-center border boder-dark'>
+                  <Col className='chat-section md-12 text-center border boder-dark'>
                 <div>Chat Will Go Right Here</div>
                 <div>Chat Will Go Right Here</div>
                 <div>Chat Will Go Right Here</div>
