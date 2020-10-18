@@ -10,7 +10,7 @@ export default class Header extends Component {
         <Navbar color="dark" dark>
         <Container>
           <Row>
-             <NavbarBrand href="/">lagger-logger</NavbarBrand>
+             <NavbarBrand href="/">lager-logger</NavbarBrand>
           </Row>
             <Nav navbar className="navbar">
               <NavItem className="navbar-el">
