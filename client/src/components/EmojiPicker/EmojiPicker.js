@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import { render } from 'react-dom';
 import Picker, { SKIN_TONE_MEDIUM_DARK } from 'emoji-picker-react';
 
-
+class EmojiPicker extends Component {
+constructor(props) 
 const App = () => {
     const [chosenEmoji, setChosenEmoji] = useState(null);
 
@@ -28,5 +29,7 @@ const EmojiData = ({chosenEmoji}) => (
 );
 
 render(<App />, document.getElementById('root'));
+
+};
 
 export default EmojiPicker;
