@@ -1,5 +1,5 @@
 const express = require("express");
-const socket = require ('socket.io');
+const server = require('http').createServer(app);
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const routes = require("./routes/index")
@@ -8,9 +8,13 @@ const session = require("express-session");
 const passport = require("passport");
 const flash = require('connect-flash');
 const PORT = process.env.PORT || 3000;
+const path = require('path');
+const io = require('socket.io')(server);
 
 // messages 
-io = socket(server);
+app.get('/', (req, res) => {
+  res.status(200).send('Working')
+})
 
 io.on('connection', (socket) => {
   console.log(socket.id);
@@ -28,12 +32,12 @@ const db = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(flash());
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname + "/client")));
 app.use(session({
   secret: "keyboard cat",
   resave: false,
   saveUninitialize: true,
-  // cookie: {secure: true}
+  cookie: {secure: true}
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -61,6 +65,6 @@ mongoose
 //   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 // });
 
-server = app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
