@@ -50,8 +50,8 @@ class Chat extends React.Component {
     return (
       <Container>
         <Row>
-          <Col className="md-4">
-            <Card>
+          <Col >
+            <Card className="chat-box">
               <CardBody>
                 <CardTitle>Let's chat!</CardTitle>
                 <hr />

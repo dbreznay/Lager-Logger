@@ -1,4 +1,18 @@
 import React from "react";
+import {
+  Card,
+  CardBody,
+  CardText,
+  CardFooter,
+  Container,
+  Button,
+  Input,
+  Form,
+  FormGroup,
+  Label,
+  Row,
+  Col,
+} from "reactstrap";
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -22,17 +36,17 @@ class Counter extends React.Component {
   // The render method returns the JSX that should be rendered
   render() {
     return (
-      <div className="card text-center">
-        <div className="card-body">
-          <p className="card-text">Drink Count: {this.state.count}</p>
-          <button className="btn btn-primary" onClick={this.handleIncrement}>
+      <Card className='counter'>
+        <CardBody>
+          <CardText style={{fontSize: '20px', fontFamily: 'Nunito'}}> Drink Count: {this.state.count} </CardText>
+          <Button className='plus' onClick={this.handleIncrement}>
             +
-          </button>{" "}
-          <button className="btn btn-danger" onClick={this.handleDecrement}>
+          </Button>{" "}
+          <Button className='minus' onClick={this.handleDecrement}>
             -
-          </button>
-        </div>
-      </div>
+          </Button>
+        </CardBody>
+      </Card>
     );
   }
 }
