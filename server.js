@@ -1,13 +1,13 @@
 const express = require("express");
-const server = require('http').createServer(app);
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const routes = require("./routes/index")
 const app = express();
+const server = require('http').createServer(app);
 const session = require("express-session");
 const passport = require("passport");
 const flash = require('connect-flash');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 const path = require('path');
 const io = require('socket.io')(server);
 
