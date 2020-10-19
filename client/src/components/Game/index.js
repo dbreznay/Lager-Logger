@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import Counter from "../Counter/Counter";
 import Chat from '../Chat/Chat';
 import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
-import EmojiPicker from "../EmojiPicker/EmojiPicker";
+
 
 class Game extends Component {
 
     render() {
         return(
-          <Container>
+          <Container className='game-body'>
 
-
-              <h1 className='text-center'>Welcome to the Lager-Logger</h1>
-              <h3 className='text-center'>Click to deal the cards</h3>
+            <Label className='game-header'> 
+              <h1>Welcome to the Lager-Logger</h1>
+              <h3>Click to deal the cards</h3> 
+              </Label>
+             
               <Container className='border border-dark p-3 '>
                 <Row>
                   <Col>
@@ -43,7 +45,7 @@ class Game extends Component {
               </Container>
               <Container>
                 <Chat />
-                <EmojiPicker />
+      
                 {/* <Row>
                   <Col className='chat-section md-12 text-center border boder-dark'>
                 <div>Chat Will Go Right Here</div>
