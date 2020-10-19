@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Counter from "../Counter/Counter";
 import Chat from '../Chat/Chat';
 import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
-import EmojiPicker from "../EmojiPicker/EmojiPicker";
+
 
 class Game extends Component {
 
@@ -43,7 +43,7 @@ class Game extends Component {
               </Container>
               <Container>
                 <Chat />
-                <EmojiPicker />
+            
                 {/* <Row>
                   <Col className='chat-section md-12 text-center border boder-dark'>
                 <div>Chat Will Go Right Here</div>
