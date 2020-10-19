@@ -10,21 +10,21 @@ class Game extends Component {
         return(
           <Container className='game-body'>
 
-            <Label className='game-header'> 
+            <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
               <h1>Welcome to the Lager-Logger</h1>
               <h3>Click to deal the cards</h3> 
               </Label>
              
-              <Container className='border border-dark p-3 '>
+              <Container>
                 <Row>
                   <Col>
                     <Container>
                       <Row>
-                        <Col className='md-6 text-center border border-dark p-3'>
+                        <Col>
                         <a type="button" onClick={shuffle} className="facedown-cards">
                         </a>
                         </Col>
-                        <Col className='md-6 text-center border border-dark p-3' id='deck'>Card face up</Col>
+                        <Col id='deck'>Card face up</Col>
                       </Row>
                     </Container>
                   </Col>
@@ -32,14 +32,14 @@ class Game extends Component {
               </Container>
               <br></br>
               <Container>
-                  <Row>
-                    <Col className='md-6 text-center p-3 border boder-dark'>
-                      <div id='rules'>Card Rules will go here</div>
+                  <Row >
+                    <Col className='jumbotron'>
+                      <div style={{fontSize: '25px', fontFamily: 'Nunito'}} id='rules'>Card Rules will go here</div>
                     </Col>
                   </Row>
               </Container>
               <Container>
-                  <Row className="d-flex justify-content-center">
+                  <Row className='counter-body'>
                     <Counter />
                   </Row>
               </Container>
