@@ -5,7 +5,6 @@ import Header from './components/header/Header';
 import Landing from './components/Landing/Landing';
 import Home from './components/Home/Home';
 import Auth from './pages/Auth';
-import Game from './components/Game/index';
 
 
  
@@ -21,7 +20,6 @@ class App extends Component {
               <Route exact path='/home' component={Home} />
               <Route exact path='/login' render={(props) => <Auth {...props} action="login" />} />
               <Route exact path="/signup" render={(props) => <Auth {...props} action="signup" />} />
-              <Route exact path="/game" component={Game} />
 
             </Switch>
         </>
