@@ -32,7 +32,7 @@ class Counter extends React.Component {
       <Zoom>
       <Card className='counter'>
         <CardBody>
-          <CardText style={{fontSize: '20px', fontFamily: 'Nunito'}}> Drink Count: {this.state.count} </CardText>
+          <CardText style={{fontSize: '35px', fontFamily: 'Nunito'}}> Drink Count: {this.state.count} </CardText>
           <Button className='plus' onClick={this.handleIncrement}>
             +
           </Button>{" "}

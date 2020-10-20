@@ -53,7 +53,7 @@ class Chat extends React.Component {
           <Col >
             <Card className="chat-box">
               <CardBody>
-                <CardTitle>Let's chat!</CardTitle>
+                <CardTitle style={{fontSize: '30px', fontFamily: 'Nunito'}} >Game Chat     <i class="far fa-comments"></i></CardTitle>
                 <hr />
                 <div className="messages">
                   {this.state.messages.map((message) => {
@@ -87,8 +87,8 @@ class Chat extends React.Component {
                     }
                   ></Input>
                   <br />
-                  <Button onClick={this.sendMessage} className="form-control">
-                    Send
+                  <Button onClick={this.sendMessage} className="form-control" style={{fontSize: '20px', fontFamily: 'Nunito'}}>
+                    Send     <i class="fas fa-paper-plane"></i>
                   </Button>
                 </FormGroup>
               </CardFooter>
