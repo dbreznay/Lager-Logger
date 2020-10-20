@@ -9,13 +9,14 @@ class Game extends Component {
 
     render() {
         return(
-          <Zoom>
           <Container id="body-container" className='game-body'>
-
+            <Zoom>
             <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
               <h1>Click to deal the cards!</h1>
               </Label>
+              </Zoom>
               <hr/>
+              <Zoom>
               <Container>
                 <Row>
                   <Col>
@@ -31,14 +32,17 @@ class Game extends Component {
                   </Col>
                 </Row>
               </Container>
+              </Zoom>
               <br></br>
+              <Zoom>
               <Container>
                   <Row >
                     <Col className='jumbotron'>
-                      <div style={{fontSize: '25px', fontFamily: 'Nunito'}} id='rules'>Card Rules will go here</div>
+                      <div style={{fontSize: '25px', fontFamily: 'Nunito'}} id='rules'>Rules</div>
                     </Col>
                   </Row>
               </Container>
+              </Zoom>
               <Container>
                   <Row className='counter-body'>
                     <Counter />
@@ -70,7 +74,6 @@ class Game extends Component {
 
 
           </Container>
-          </Zoom>
 
         )
     }

@@ -5,6 +5,7 @@ import {
   CardText,
   Button,
 } from "reactstrap";
+import Zoom from 'react-reveal/Zoom';
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -28,6 +29,7 @@ class Counter extends React.Component {
   // The render method returns the JSX that should be rendered
   render() {
     return (
+      <Zoom>
       <Card className='counter'>
         <CardBody>
           <CardText style={{fontSize: '20px', fontFamily: 'Nunito'}}> Drink Count: {this.state.count} </CardText>
@@ -39,6 +41,7 @@ class Counter extends React.Component {
           </Button>
         </CardBody>
       </Card>
+      </Zoom>
     );
   }
 }
