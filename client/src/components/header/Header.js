@@ -7,14 +7,14 @@ export default class Header extends Component {
   render() {
     return (
       
-        <Navbar color="dark" dark>
+        <Navbar className='nav' color="dark" dark>
         <Container>
           <Row>
-             <NavbarBrand href="/">lager-logger</NavbarBrand>
+            <NavbarBrand href="/">Lager Logger!</NavbarBrand>
           </Row>
             <Nav navbar className="navbar">
               <NavItem className="navbar-el">
-                <NavLink href="/">Dashboard</NavLink>
+                <NavLink href="/home">Home</NavLink>
               </NavItem>
               <NavItem className="navbar-el">
                 <NavLink href="/create-game">Create Game</NavLink>
@@ -23,7 +23,7 @@ export default class Header extends Component {
                 <NavLink href="/login">LogIn/LogOut</NavLink>
               </NavItem>
               <NavItem className="navbar-el">
-                <NavLink href="/profile">Profile Settings</NavLink>
+                <NavLink href="/game">Play A Game</NavLink>
               </NavItem>
             </Nav>
           </Container>

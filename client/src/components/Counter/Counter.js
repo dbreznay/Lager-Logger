@@ -3,15 +3,7 @@ import {
   Card,
   CardBody,
   CardText,
-  CardFooter,
-  Container,
   Button,
-  Input,
-  Form,
-  FormGroup,
-  Label,
-  Row,
-  Col,
 } from "reactstrap";
 
 // By extending the React.Component class, Counter inherits functionality from it

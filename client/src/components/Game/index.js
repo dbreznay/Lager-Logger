@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Counter from "../Counter/Counter";
 import Chat from '../Chat/Chat';
-import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
+import { Container, Label, Row, Col } from 'reactstrap';
 
 
 class Game extends Component {
@@ -11,10 +11,9 @@ class Game extends Component {
           <Container className='game-body'>
 
             <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
-              <h1>Welcome to the Lager-Logger</h1>
-              <h3>Click to deal the cards</h3> 
+              <h1>Click to deal the cards!</h1>
               </Label>
-             
+              <hr/>
               <Container>
                 <Row>
                   <Col>
