@@ -8,7 +8,7 @@ class Game extends Component {
 
     render() {
         return(
-          <Container className='game-body'>
+          <Container id="body-container" className='game-body'>
 
             <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
               <h1>Click to deal the cards!</h1>
