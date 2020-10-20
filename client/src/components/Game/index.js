@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Counter from "../Counter/Counter";
 import Chat from '../Chat/Chat';
 import { Container, Button, Input, Form, FormGroup, Label, Row, Col } from 'reactstrap';
-
+import Zoom from 'react-reveal/Zoom';
 
 class Game extends Component {
 
     render() {
         return(
+          <Zoom>
           <Container className='game-body'>
 
             <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
@@ -69,6 +70,7 @@ class Game extends Component {
 
 
           </Container>
+          </Zoom>
 
         )
     }
