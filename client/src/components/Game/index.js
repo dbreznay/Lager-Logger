@@ -3,6 +3,7 @@ import Counter from "../Counter/Counter";
 import Chat from '../Chat/Chat';
 import { Container, Label, Row, Col } from 'reactstrap';
 import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 
 
 class Game extends Component {
@@ -16,7 +17,7 @@ class Game extends Component {
               </Label>
               </Zoom>
               <hr/>
-              <Zoom>
+              <Flip>
               <Container>
                 <Row>
                   <Col>
@@ -26,13 +27,13 @@ class Game extends Component {
                         <a type="button" onClick={load} className="facedown-cards">
                         </a>
                         </Col>
-                        <Col id='deck'>Card face up</Col>
+                        <Col id='deck'></Col>
                       </Row>
                     </Container>
                   </Col>
                 </Row>
               </Container>
-              </Zoom>
+              </Flip>
               <br></br>
               <Zoom>
               <Container>
