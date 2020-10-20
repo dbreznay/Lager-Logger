@@ -7,9 +7,7 @@ import {
   Container,
   Button,
   Input,
-  Form,
   FormGroup,
-  Label,
   Row,
   Col,
 } from "reactstrap";
@@ -26,7 +24,7 @@ class Chat extends React.Component {
       messages: [],
     };
 
-    this.socket = io("localhost:3002");
+    this.socket = io(process.env.PORT);
 
     this.socket.on("RECEIVE_MESSAGE", function(data) {
       addMessage(data);
