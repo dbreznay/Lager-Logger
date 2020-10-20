@@ -20,7 +20,7 @@ class Game extends Component {
                     <Container>
                       <Row>
                         <Col>
-                        <a type="button" onClick={shuffle} className="facedown-cards">
+                        <a type="button" onClick={load} className="facedown-cards">
                         </a>
                         </Col>
                         <Col id='deck'>Card face up</Col>
@@ -184,5 +184,4 @@ function load()
   renderDeck();
 }
 
-window.onload = load;
 export default Game;

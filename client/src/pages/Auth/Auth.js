@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Login from "../../components/Login/index";
-import Signup from "../../components/Signup/index";
 import API from "../../utils/API";
-
+import Game from '../../components/Game'
 
 class Auth extends Component {
 
@@ -127,28 +125,7 @@ class Auth extends Component {
 
     render(){
         return(
-            <div className="authBox">
-                {(this.props.action === "login") ? (
-                    <Login
-                        username={this.state.username}
-                        password={this.state.password}
-                        handleLogin={this.handleLogin}
-                        handleInputChange={this.handleInputChange}
-                        message={this.state.message}
-                        loggedIn={this.state.loggedIn}
-                        handleLogout={this.handleLogout}
-                    />
-                ) : (
-                    <Signup
-                        username={this.state.username}
-                        password={this.state.password}
-                        confirmPassword={this.state.confirmPassword}
-                        handleSignup={this.handleSignup}
-                        handleInputChange={this.handleInputChange}
-                        message={this.state.message}
-                    />
-                )}
-            </div>
+            <Game />
         )
     }
 };
