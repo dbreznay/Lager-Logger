@@ -1,15 +1,16 @@
 import React from "react";
 import { Container, Form, FormGroup, Label, Input, Alert, Button} from 'reactstrap';
 import { Link } from "react-router-dom";
-
+import Zoom from 'react-reveal/Zoom';
 
 function Login(props) {
 
 
     return (
-        <Container>
+        <Container id='body-container' className='login-body'>
+            <Zoom>
             <div className="loginBox">
-                <h2 className="loginTitle title-font">Login</h2>
+                <h2 style={{fontSize: '50px', fontFamily: 'Nunito'}}>Log in</h2>
                 <hr/>
                 {props.message ? (
                     <Alert className="animated fadeIn" color="danger">Please Sign In</Alert>
@@ -19,9 +20,9 @@ function Login(props) {
                     <Button id="logOutBtn" onClick={props.handleLogout} >Logout</Button>
                 ) : (
                 <>
-                <Form id="login">
+                <Form id="login" style={{fontSize: '20px', fontFamily: 'Nunito'}} >
                     <FormGroup>
-                        <Label for="username">Username</Label>
+                        <Label for="username" >Username</Label>
                         <Input type="text" name="username" id="username" placeholder="username" value={props.username} onChange={props.handleInputChange} />
                     </FormGroup>
                     <FormGroup>
@@ -35,10 +36,11 @@ function Login(props) {
                         </p>
                     </FormGroup>
                 </Form>
-                <Button id="loginBtn" onClick={props.handleLogin} >Login</Button>
+                <Button id="loginBtn" style={{fontSize: '18px', fontFamily: 'Nunito'}} onClick={props.handleLogin} >Login</Button>
                 </>
                 )}
             </div>
+            </Zoom>
         </Container>
     );
 }

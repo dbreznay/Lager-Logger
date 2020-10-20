@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Label } from 'reactstrap';
+import { Container, Label, Card, CardTitle, CardText, Button } from 'reactstrap';
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -8,16 +8,18 @@ class Home extends Component {
 
     render() {
         return(
-          <Container id="body-container" className='home-body'>
+          <Container id='body-container' className='home-body'>
+          <Zoom>
+           <Card className='jumbotron'> 
+               <CardTitle style={{fontSize: '30px', fontFamily: 'Nunito'}}>Lager Logger     <i class="fas fa-beer"></i></CardTitle>
+               <CardText style={{fontSize: '20px', fontFamily: 'Nunito'}}> Continue Game Below</CardText>
+               <hr/>
+              <CardText style={{fontSize: '15px', fontFamily: 'Nunito'}}>Press Play to Continue</CardText>
+            <Button href='/login'><i class="fas fa-play"></i></Button>
 
-            <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
-              <h1>Welcome to Lager Logger!</h1>
-              <h3>Log in or Sign Up to play!</h3>
-              <Link to='/login' style={{fontSize: '15px', fontFamily: 'Nunito'}} > Log in!</Link>
-              </Label>
-            
-                 
-          </Container>
+           </Card>
+          </Zoom>      
+         </Container>
 
         )
     }
