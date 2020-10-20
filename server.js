@@ -11,11 +11,7 @@ const PORT = process.env.PORT || 3002;
 const path = require('path');
 const io = require('socket.io')(server);
 
-// messages 
-app.get('/', (req, res) => {
-  res.status(200).send('Working')
-})
-
+// messages
 io.on('connection', (socket) => {
   console.log(socket.id);
 
