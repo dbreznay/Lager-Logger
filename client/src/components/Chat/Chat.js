@@ -48,7 +48,7 @@ class Chat extends React.Component {
   render() {
     return (
       <Zoom>
-      <Container>
+      <Container id="chat-section">
         <Row>
           <Col >
             <Card className="chat-box">
