@@ -20,7 +20,7 @@ export default class Header extends Component {
                 <NavLink href="/signup">Sign Up</NavLink>
               </NavItem>
               <NavItem className="navbar-el">
-                <NavLink href="/login">LogIn to Play!</NavLink>
+                <NavLink href="/login">LogIn to Play</NavLink>
               </NavItem>
             
             </Nav>
