@@ -140,7 +140,7 @@ function renderDeck()
         rules.innerHTML = 'Three is ME, baby. drink up!';
         break;
       case '4':
-        rules.innerHTML = 'Four is FLOOR! Last person to play the down-emoji takes a sip';
+        rules.innerHTML = 'Four is FLOOR! Last person to type and send "floor" in the chat drinks.';
         break;
       case '5':
         rules.innerHTML = 'Five is GUYS. Fellas take a drink.';
@@ -149,7 +149,7 @@ function renderDeck()
         rules.innerHTML = 'Six is CHICKS. Ladies you know what to do.';
         break;
       case '7':
-        rules.innerHTML = 'Seven is HEAVEN. Last person to play the hands up emoji drinks.';
+        rules.innerHTML = 'Seven is HEAVEN. Last person to type and send "heaven" in the chat drinks.';
         break;
       case '8':
         rules.innerHTML = 'Eight is MATE. Pick someone else to be your mate and when one of you sips the other must as well.';
