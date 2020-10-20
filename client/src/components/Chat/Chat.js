@@ -14,7 +14,6 @@ import {
   Col,
 } from "reactstrap";
 import io from "socket.io-client";
-import Zoom from 'react-reveal/Zoom';
 
 class Chat extends React.Component {
   constructor(props) {
@@ -49,7 +48,6 @@ class Chat extends React.Component {
   }
   render() {
     return (
-      <Zoom>
       <Container>
         <Row>
           <Col >
@@ -98,7 +96,6 @@ class Chat extends React.Component {
           </Col>
         </Row>
       </Container>
-      </Zoom>
     );
   }
 }
