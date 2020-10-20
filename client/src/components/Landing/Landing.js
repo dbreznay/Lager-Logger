@@ -7,7 +7,7 @@ class Landing extends Component {
 
     render() {
         return(
-          <Container className='home-body'>
+          <Container id="body-container" className='home-body'>
 
             <Label className='jumbotron' style={{fontSize: '30px', fontFamily: 'Nunito'}}> 
               <h1>Welcome to the Lager-Logger</h1>
