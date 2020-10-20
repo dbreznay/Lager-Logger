@@ -39,7 +39,7 @@ class Game extends Component {
               <Container>
                   <Row >
                     <Col className='jumbotron'>
-                      <div style={{fontSize: '25px', fontFamily: 'Nunito'}} id='rules'>Rules</div>
+                      <div style={{fontSize: '25px', fontFamily: 'Nunito'}} id='rules'></div>
                     </Col>
                   </Row>
               </Container>
