@@ -17,14 +17,12 @@ export default class Header extends Component {
                 <NavLink href="/home">Home</NavLink>
               </NavItem>
               <NavItem className="navbar-el">
-                <NavLink href="/create-game">Create Game</NavLink>
+                <NavLink href="/signup">Sign Up</NavLink>
               </NavItem>
               <NavItem className="navbar-el">
-                <NavLink href="/login">LogIn/LogOut</NavLink>
+                <NavLink href="/login">LogIn to Play!</NavLink>
               </NavItem>
-              <NavItem className="navbar-el">
-                <NavLink href="/game">Play A Game</NavLink>
-              </NavItem>
+            
             </Nav>
           </Container>
         </Navbar>
